@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded",(e) => {
         } else {
             //현재 프로필에 있는 값을 변수에 담아놓는다.
             let _userInfo = userInfo.textContent
-            let _summary = summary.textContent
+            let _summary = summary.textContent 
             let _profileDetail = profileDetail.textContent
 
             //textContent : 문자열만들어감(태그도 문자열 취급)
