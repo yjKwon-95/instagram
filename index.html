@@ -1,0 +1,125 @@
+<!-- 주석(comment) : 브라우저에서 출력이 되지 않는 문장
+ 소스코드에 대한 설명을 할 때 사용 -->
+<!DOCTYPE html> <!-- HTML5 문서임을 선언, 대소문자 구분없이 정의가능 -->
+<html lang="en"> <!-- 루트 요소 -->
+    <head> <!-- HTML의 meta정보를 포함한다.  -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>제목입니다.</title> <!-- HTML 페이지의 제목, 브라우저 상단의 웹페이지 탭에 제목으로 노출  -->
+        <!-- relationship: 연결하려는 파일과의 관계 -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="index.js"></script>
+    </head>
+    <body><!-- HTML문서에서 실질적으로 보이는 영역을 정의하는 구간 이미지, 글, 링크, 테이블, 동영상 등등 -->
+        <!-- 코드 작성시 엔터를 눌러 줄바꿈을 시도했음에도 불구하고 실행화면에는 한줄로 연결된 채 나온다. -->
+         <div id="top">
+            <img src="image/instagramlogo.png">
+            <input value="검색">
+            <div>
+                <i class="fa-solid fa-house"></i>
+                <i class="fa-solid fa-paper-plane"></i>
+                <i class="fa-solid fa-compass"></i>
+                <i class="fa-solid fa-heart"></i>
+            </div>
+         </div>
+
+         <div id="profile">
+            <div id="profile_pic">
+                <img src="image/profile.jpg" class="circle_pic">
+            </div>
+
+            <div id="profile_info">
+                <div id="id">
+                    <span>half_bottle</span>
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+                <button id="profileEditButton">프로필 편집</button>
+            </div>
+        </div>
+
+        <div>
+            <p>
+                <strong id="userInfo">
+                    반병현(Bynghyun Ban)<br>
+                </strong>
+                <span id="summary">작가</span><br>
+            </p>
+            <p id="profileDetail"> 
+                <a href="https://needleworm.github.io">needleworm.github.io</a>
+            </p>
+        </div>
+        
+        <div id="highlight_area">
+            <div class="highlight">
+                <div class="highlight_pic">
+                    <img src="image/hl 1.jpg" class="circle_pic">
+                </div>
+                <div>
+                    😘
+                </div>
+            </div>
+            <div class="highlight">
+                <div class="highlight_pic">
+                    <img src="image/hl 2.jpg" class="circle_pic">
+                </div>
+                <div>
+                    😘
+                </div>
+            </div>
+            <div></div>
+        </div>
+
+        <div id="stat_bar">
+            <div class="stat">
+                게시물<br>
+                133
+            </div>
+            <div class="stat">
+                팔로워<br>
+                408
+            </div>
+            <div class="stat">
+                팔로우<br>
+                189
+            </div>
+        </div>
+
+        <!-- 아이콘이 들어갈 자리 -->
+        <div id="sub_icons">
+            <div class="selected">
+                <i class="fa-solid fa-border-all"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-film"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-circle-play"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-bookmark"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-user-tag"></i>
+            </div>
+        </div>
+
+        <div>
+            <div class="thumbnail_grid">
+                <img src="image/1.jpg" class="thumbnail">
+                <img src="image/2.jpg" class="thumbnail">
+                <img src="image/3.jpg" class="thumbnail">
+            </div>
+            <div class="thumbnail_grid">
+                <img src="image/4.jpg" class="thumbnail">
+                <img src="image/5.jpg" class="thumbnail">
+                <img src="image/6.jpg" class="thumbnail">
+            </div>
+            <div class="thumbnail_grid">
+                <img src="image/7.jpg" class="thumbnail">
+                <img src="image/8.jpg" class="thumbnail">
+                <img src="image/9.jpg" class="thumbnail">
+            </div>
+        </div>
+    </body>
+</html>
