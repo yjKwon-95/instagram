@@ -28,14 +28,16 @@
 
 /* 프로필 사진의 컨테이너 */
 #profile_pic{
-    width: 50px;
-    height: 50px;
+    width: 15vw;
+    height: 15vh;
 }
 
 /* 하이라이트 사진의 컨테이너 */
 .highlight_pic{
-    width: 35px;
-    height: 35px;
+    width: 10vw;
+    height: 10vh;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* 원형으로 만드려는 이미지 */
@@ -51,7 +53,7 @@
 /* 하이라이트 영역 grid 사용하여 정렬하기 */
 #highlight_area{
     display:grid;
-    grid-template-columns: 45px 45px 1fr;
+    grid-template-columns: 12vw 12vw 1fr;
 }
 
 .highlight{
@@ -69,11 +71,11 @@
     display:grid;
     grid-template-rows: 1fr 1fr;
 
-    height: 70px;
+    height: 15vw;
 }
 
 #id{
-    font-size: 18px;
+    font-size: 6vw;
     font-weight: 100;
 }
 
@@ -81,7 +83,7 @@ button{
     height: 80%;
     width: 95%;
 
-    font-size: 10px;
+    font-size: 3vw;
     background-color: white;
     border: solid gray 1px;
     border-radius: 3px;
@@ -90,9 +92,9 @@ button{
 #top{
     display:grid;
     grid-template-columns: 4fr 7fr 4fr;
-    height: auto;
-    margin-bottom: 25px;
-
+    height: 10vw;
+    min-height: 10vw;
+    margin-bottom: 3vw;
     border-bottom: solid gray 0.1px;
 }
 
@@ -100,8 +102,9 @@ button{
     margin-left: auto;
     margin-right: auto;
 
+    width: 100%;
     height: 100%;
-    object-fit: contain;
+    /* object-fit: contain; */
 }
 
 #top input{
@@ -119,17 +122,17 @@ button{
     border: solid gray 1px;
     border-radius: 3px;
 
-    font-size: 10px;
+    font-size: 3vw;
     font-weight: 100;
 
 }
 #top div{
     text-align: center;
-    padding-top: 10px;
+    padding-top: 3vw;
 }
-i{
-    font-size: 25px;
-    margin-top:15px;
+#top i{
+    font-size: 4vw;
+    margin-top:1vw;
 }
 
 #sub_icons{
@@ -137,11 +140,15 @@ i{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
     text-align: center;
-    font-size: 15px;
+    font-size: 5vw;
 
-    height:55px;
+    height:8vw;
 }
 
 .selected{
     border-bottom: 3px gray solid;
+}
+
+body{
+    font-size: 3vw;
 }
